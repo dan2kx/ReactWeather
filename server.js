@@ -6,7 +6,7 @@ const PORT = process.env.PORT || 3000;
 
 // This is for heroku and the open maps thing
 app.use(function(req, res, next){
-  if (req.headers('x-forwarded-proto') === 'http') {
+  if (req.headers['x-forwarded-proto'] === 'http') {
     next();
   }
   else {
