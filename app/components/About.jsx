@@ -16,4 +16,5 @@ var About = (props) => {
     </div>
   )
 }
+
 module.exports = About;
